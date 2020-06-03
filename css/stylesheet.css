@@ -31,8 +31,9 @@ header {
 /* -------- Banner Styles -------- */
 
 #banner-box {
-    background-color: #5777C8;
-    background-image: url("https://raw.githubusercontent.com/warptrail/thinkful-portfolio-website/master/img/banner-01.png");
+    
+    background-image:
+    linear-gradient(1deg, rgba(165,194,255,.99) 0%, rgba(98,117,173,0.71) 40%, rgba(68,66,134,0.56) 67%, rgba(38,48,100,0.93) 91%), url("https://raw.githubusercontent.com/warptrail/thinkful-portfolio-website/master/img/banner-01.png");
     background-origin: content-box; 
     background-attachment: fixed;
     background-size: 1918px 342px;
@@ -47,6 +48,7 @@ header {
 }
 #banner-img-frame {
    text-align: center;
+   
 }
 
 #banner-img-frame img {
@@ -72,19 +74,19 @@ header {
 }
 
 .intro-png {
-    margin-right: 7%;
+   margin: auto 10px;
 }
 
 #intro-top {
     display: none;
 }
-#intro-box .info {
-    width: 500px;
+.info {
+    width: 40%;
 }
 
 #name {
     font-size: 1.4em;
-    margin-bottom: 1.3em;
+    margin-bottom: 10px;
     border-radius: 12px;
     background-color: #636DD7;
     padding: 6px;
@@ -99,7 +101,8 @@ header {
 }
 
 .intro-img img {
-    width: 240px;
+    width: 50%;
+    margin: 30px 0;
 }
 
 #location{
@@ -133,11 +136,9 @@ header {
 
 
 
-
-
 /* -------- About Me Styles -------- */
 #about-box {
-    background-color: #74E3EB;
+    background: linear-gradient(126deg, rgba(165,194,255,1) 0%, rgba(68,66,134,1) 100%);
     padding: 10px;
     margin: 10px;
     display: flex;
@@ -153,23 +154,42 @@ header {
 
 .about-row {
     display: flex;
-    background-color: #1D4043;
+    background: radial-gradient(circle, rgba(64,87,129,1) 0%, rgba(76,131,132,1) 49%, rgba(94,66,134,1) 100%);
     padding: 10px;
     margin: 10px;
     justify-content: center;
 }
 
 .about-content {
+    background: radial-gradient(circle, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.8) 38%, rgba(255,255,255,0.8) 56%, rgba(255,255,255,0.63) 100%);
     padding: 10px;
     width: 33%;
-    background-color: honeydew;
     margin: 10px;
    
 }
 
+.about-content h3 {
+    margin-bottom: 10px;
+}
+
+.icon-subrow {
+    display: flex;
+
+}
+
+.tiny-icon img:hover {
+    filter: hue-rotate(90deg);
+}
+
 .about-content p {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 10px 5px ;
+}
+
+.about-content ul li {
+    font-size: 16px;
+   margin: 10px;
+    list-style: none;
 }
 
 .icon-a {
@@ -218,7 +238,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #5B2424;
+    background: rgb(93,67,134);
+    background: linear-gradient(222deg, rgba(93,67,134,1) 0%, rgba(88,41,41,1) 50%, rgba(86,166,215,1) 100%);
 }
 
 .heroright {
@@ -226,19 +247,28 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background-color: #696F20 ;
+    margin: 0 auto;
 }
 
+.backplate {
+    background: rgb(94,134,67);
+    background: linear-gradient(348deg, rgba(94,134,67,1) 0%, rgba(41,81,88,1) 50%, rgba(86,166,215,1) 100%);
+    border-radius: 10px;
+}
 .heroright p {
     margin: 10px 5px;
+    padding: 20px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
 }
 
 .heroimg {
-    margin: 20 0;
+    width: 40%;
+    margin: 20px 10px;
 }
 
 .heroimg img {
-    width: 500px;
+    width: 100%;
 }
 .heroheading {
     background-color: #829158;
@@ -249,7 +279,7 @@ header {
 }
 .herobutton {
     color: white;
-    background-color: #5B2424;
+    background-color: #23162B;
     width: 50%;
     text-align: center;
     border-radius: 10px;
@@ -268,6 +298,8 @@ header {
 
 /* -------- Links Styles -------- */
 #links {
+    background-color: background: rgb(94,134,67);
+    background: linear-gradient(32deg, rgba(94,134,67,1) 0%, rgba(91,61,110,1) 50%, rgba(86,166,215,1) 100%);
     display: flex;
     justify-content: space-evenly;
     text-align: center;
@@ -305,36 +337,50 @@ header {
 .wordpresslink img {
     width: 100%;
 }
+.wordpresslink img:hover {
+    filter: hue-rotate(90deg)
+}
 
 
 /* -------- Github Pages List Styles -------- */
 #gitpages {
     display: flex;
     justify-content: left;
-    background-color: #587891;
-    width: 85%;
+    background: rgb(120,131,255);
+    background: linear-gradient(37deg, rgba(120,131,255,1) 0%, rgba(88,41,41,1) 100%);
+    width: 65%;
     margin: 0 auto;
     margin-top: 90px;
 }
 
 #git-img-frame {
-    background-color: rebeccapurple;
     text-align: left;
-    margin: 10px;
+    margin: auto 10px;
+    width: 40%;
 }
 #git-img-frame img {
-    width: 400px;
+    width: 90%;
 }
 
 #project-list {
     margin: 5px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #project-list h3 {
     margin: 20px 10px;
+    font-size: 30px;
+}
+
+#project-list ul li {
+    list-style: none;
+    margin-bottom: 8px;
+    padding: 5px;
 }
 #project-list ul li a {
-    list-style: none;
+    font-size: 20px;
+    padding: 5px;
     text-decoration: underline;
     background-color: black;
     color: #3AEE00;
@@ -346,6 +392,69 @@ header {
 }
 
 
+
+
+
+/* -------- Math Bar Styles -------- */
+
+#mathbar {
+    background-color: #A1ADC3;
+    margin-bottom: 500px;
+    margin: 20px;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12px auto;
+}
+
+#numinputs form {
+    background-color: #ADC3E8;
+    display: flex;
+}
+
+.number-input {
+    display: flex;
+    flex-direction: column;
+    margin: 2px 30px;
+    width: 30%;
+}
+
+.number-input input {
+    width: 80%;
+    font-size: 24px;
+}
+
+#mathinstructions {
+    padding: 20px;
+    background-color: gray;
+}
+#mathinstructions p {
+    font-size: 22px;
+}
+
+#submit-form {
+    width: 30%;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 35px;
+    background-color: #7D92B8;
+}
+
+#output {
+    margin-top: 10px;
+    font-size: 22px;
+}
+ #output p {
+     padding-bottom: 5px;
+ }
+
+.deadspace {
+    height: 400px;
+    background-color: black;
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/potw1936a.jpg");
+    background-size: contain;
+}
 /* -------- Mobile Styles -------- */
 @media screen and (max-width: 863px){
     #hero {
@@ -354,7 +463,8 @@ header {
     #intro-box {
         flex-direction: column;
         background-image: none;
-        background-color: #CDD2FF;
+        background: rgb(238,236,255);
+        background: linear-gradient(189deg, rgba(238,236,255,1) 0%, rgba(138,155,190,1) 50%, rgba(86,99,215,1) 100%);
     }
     #intro-side {
        display: none;
@@ -386,8 +496,12 @@ header {
         margin-bottom: 20px;
     }
     .heroimg {
-        width: 100%;
+        width: 90%;
+        margin: 10px auto;
         text-align: center;
+    }
+    .heroimg .img {
+        width: 70%;
     }
     #atlantisbutton {
         margin-bottom: 10px;
@@ -399,10 +513,47 @@ header {
         width: 30%;
     }
     .link-box a {
-        font-size: 80%;
+        font-size: 13px;
     }
     #wordpress-links {
         flex-direction: column;
         width: 70%;
     }
+    #gitpages {
+        flex-direction: column;
+    }
+    #git-img-frame {
+        text-align: center;
+    }
+
+    #mathbar {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #mathinstructions p {
+        font-size: 17px;
+        margin-bottom: 3px;
+    }
+    #numinputs form {
+        flex-direction: column;
+        text-align: center;
+    }
+    .number-input {
+        width: 20%;
+        text-align: center;
+    }
+    .number-input input {
+       align-items: center;
+       margin: 5px auto;
+    }
+
+    #percentage-form {
+        text-align: center;
+        align-items: center;
+    }
+    #submit-form {
+        width: 25%;
+        padding: 5px 10px;
+    }
 }
+
