@@ -1,1 +1,5 @@
-console.log('Live Long and Prosper')
+function hello(something) {
+    console.log("hello " + something);
+}
+
+hello("world");
