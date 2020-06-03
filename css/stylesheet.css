@@ -32,7 +32,7 @@ header {
 
 #banner-box {
     background-color: #5777C8;
-    background-image: url("img/banner-01.png");
+    background-image: url("https://raw.githubusercontent.com/warptrail/thinkful-portfolio-website/master/img/banner-01.png");
     background-origin: content-box; 
     background-attachment: fixed;
     background-size: 1918px 342px;
@@ -61,7 +61,7 @@ header {
 /* -------- Intro Box Styles -------- */
 
 #intro-box {
-    background-image: url(img/baybridgebg.jpg);
+    background-image: url("https://raw.githubusercontent.com/warptrail/thinkful-portfolio-website/master/img/baybridgebg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10px;
