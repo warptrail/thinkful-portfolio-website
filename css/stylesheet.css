@@ -9,551 +9,256 @@ body {
     background-color: #6B7898;
 }
 
-header {
-    background-color: #263064;
-    display: flex;
-}
-
-.bar {
-    display: flex;
-}
-
-#logo {
-    margin-left: auto;
-    margin-right: 50px;
-}
-
-.menu img:hover {
-    filter: hue-rotate(50deg);
-    cursor: pointer;
-}
-
-/* -------- Banner Styles -------- */
-
-#banner-box {
-    
-    background-image:
-    linear-gradient(1deg, rgba(165,194,255,.99) 0%, rgba(98,117,173,0.71) 40%, rgba(68,66,134,0.56) 67%, rgba(38,48,100,0.93) 91%), url("https://raw.githubusercontent.com/warptrail/thinkful-portfolio-website/master/img/banner-01.png");
-    background-origin: content-box; 
-    background-attachment: fixed;
-    background-size: 1918px 342px;
+.portfolio {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.banner-item {
-    width: 85%;
-}
-#banner-img-frame {
-   text-align: center;
-   
-}
-
-#banner-img-frame img {
-    width: 280px;
-}
-#banner-img-frame img:hover {
-   filter: hue-rotate(50deg);
-}
-
-
-
-/* -------- Intro Box Styles -------- */
-
-#intro-box {
-    background-image: url("https://raw.githubusercontent.com/warptrail/thinkful-portfolio-website/master/img/baybridgebg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
+    max-width: 800px;
     justify-content: left;
-    margin: 0 9%;
+    margin: 0 auto;
 }
 
-.intro-png {
-   margin: auto 10px;
+
+/* Header Styles */
+
+header{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(89,139,184);
+    background: linear-gradient(180deg, rgba(89,139,184,0.7253883670520231) 0%, rgba(80,146,165,0.6097814306358382) 21%, rgba(107,120,152,1) 100%);
 }
 
-#intro-top {
-    display: none;
-}
-.info {
-    width: 40%;
-}
-
-#name {
-    font-size: 1.4em;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    background-color: #636DD7;
-    padding: 6px;
-    opacity: 90%;
-}
-
-#name p {
+header h1 {
     text-align: center;
-}
-.intro-img {
-    text-align: center;
+    margin-top: 20px;
+    font-size: 38px;
+    font-family: 'Lexend Tera', sans-serif;
 }
 
-.intro-img img {
-    width: 50%;
+header h2 {
+    margin-right: 30px;
+}
+
+header .mission {
+    font-size: 28px;
+    margin: 50px 5px 100px 25px;
+}
+
+
+/* main styles */
+main {
+    margin: 0;
+}
+main article {
+   margin: 20px;
+}
+
+a { font-size: 24px; }
+a:link { color: black; }
+a:visited { color: black; }
+a:hover { color: #4C4EAC; }
+a:active { color: #7D7EBB ; }
+
+.linkbox {
+ text-align: center;
+}
+
+.portrait-frame {
+    margin: 0 0 80 0;
+    
+}
+.portrait-frame img {
+    width: 100%;
+}
+
+main p {
+    font-size: 24px;
+    margin: 18px 0;
+    line-height: 35px;
+}
+
+/* introduction styles */
+.intro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction {
+    margin: 30px 10px 20px 10px ;
+}
+
+.introduction h2 {
+    font-size: 40px;
+}
+
+.location {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+/* about me styles */
+
+.aboutme section {
     margin: 30px 0;
 }
 
-#location{
+.aboutme h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.aboutme h3 {
+    font-size: 32px;
+}
+
+hr{ 
+    height: 1px;
+    color: #ACBEE8;
+    background-color: #ACBEE8;
+    border: none;
+  }
+
+/* contact styles */
+
+.contact-me {
+    margin: 30px 0;
+}
+.contact-me h3 {
     text-align: center;
-    font-size: 20px;
-    background-color: #AAD8DC;
-    border-radius: 9px;
-    width: 75%;
-    margin: 0 auto;
+    font-size: 30px;
 }
-
-#special {
+.contact-me nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #141A62;
-    color: #CDD2FF;
-    margin: auto 0;
-    margin-left: 10%;
-    padding: 30px;
-    border-radius: 12px;
-    opacity: 90%;
-}
-
-#special p {
-    font-size: 1.2rem;
-    margin-bottom: 18px;
-}
-
-
-
-
-
-/* -------- About Me Styles -------- */
-#about-box {
-    background: linear-gradient(126deg, rgba(165,194,255,1) 0%, rgba(68,66,134,1) 100%);
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.about-header {
-    text-align: center;
-}
-.about-header img {
-    width: 300px;
-}
-
-.about-row {
-    display: flex;
-    background: radial-gradient(circle, rgba(64,87,129,1) 0%, rgba(76,131,132,1) 49%, rgba(94,66,134,1) 100%);
-    padding: 10px;
-    margin: 10px;
     justify-content: center;
 }
 
-.about-content {
-    background: radial-gradient(circle, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.8) 38%, rgba(255,255,255,0.8) 56%, rgba(255,255,255,0.63) 100%);
-    padding: 10px;
-    width: 33%;
-    margin: 10px;
-   
+.icon-frame {
+    margin: 0 20px;
 }
 
-.about-content h3 {
-    margin-bottom: 10px;
-}
-
-.icon-subrow {
-    display: flex;
-
-}
-
-.tiny-icon img:hover {
-    filter: hue-rotate(90deg);
-}
-
-.about-content p {
-    font-size: 16px;
-    margin: 10px 5px ;
-}
-
-.about-content ul li {
-    font-size: 16px;
-   margin: 10px;
-    list-style: none;
-}
-
-.icon-a {
-    text-align: center;
-}
-
-.icon-a img:hover {
-    filter: hue-rotate(50deg);
-}
-
-#soundcloud {
-    text-decoration: none;
-    color: #E35C0B;
-    font-weight: bold;
-}
-#soundcloud:hover {
-    text-decoration: none;
-    color: #0BE32D;
-    font-weight: bold;
-}
-#instagram {
-    text-decoration: none;
-    color: #620BE3;
-    font-weight: bold;
-}
-#instagram:hover {
-    text-decoration: none;
-    color: #0BE32D;
-    font-weight: bold;
-}
-.icon-b {
-    margin: auto 0;
-}
-.icon-b img {
+.icon-frame img {
     width: 100px;
 }
 
-.icon-b img:hover {
-    filter: hue-rotate(50deg);
+.icon-frame img:hover {
+    filter: hue-rotate(330deg);
+    filter: brightness(1.5)
 }
 
-
-
-/* -------- hero Styles -------- */
-#hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: rgb(93,67,134);
-    background: linear-gradient(222deg, rgba(93,67,134,1) 0%, rgba(88,41,41,1) 50%, rgba(86,166,215,1) 100%);
-}
-
-.heroright {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.backplate {
-    background: rgb(94,134,67);
-    background: linear-gradient(348deg, rgba(94,134,67,1) 0%, rgba(41,81,88,1) 50%, rgba(86,166,215,1) 100%);
-    border-radius: 10px;
-}
-.heroright p {
-    margin: 10px 5px;
-    padding: 20px 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2em;
-}
-
-.heroimg {
-    width: 40%;
-    margin: 20px 10px;
-}
-
-.heroimg img {
-    width: 100%;
-}
-.heroheading {
-    background-color: #829158;
-    font-size: 35px;
-    margin: 10px 10px;
-    padding: 5px 5px;
-    border-radius: 10px;
-}
-.herobutton {
-    color: white;
-    background-color: #23162B;
-    width: 50%;
-    text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.herobutton:hover {
-    color: black;
-    background-color: #AEBA29;
-}
-
-
-
-
-
-/* -------- Links Styles -------- */
-#links {
-    background-color: background: rgb(94,134,67);
-    background: linear-gradient(32deg, rgba(94,134,67,1) 0%, rgba(91,61,110,1) 50%, rgba(86,166,215,1) 100%);
-    display: flex;
-    justify-content: space-evenly;
+.contact-me a {
     text-align: center;
 }
 
-.link-box img:hover {
-    filter:hue-rotate(50deg);
-    cursor: pointer;
+footer {
+   background-color: darkgray;
+   padding: 10px;
 }
 
-.link-box a {
-    text-decoration: none;
-    color: blue;
-    font-size: 22px;;
+/* project list styles */
+.project-list {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.project-list h2 {
+    font-size: 36px;;
 }
 
-.link-box img {
-    width: 50%;
-}
-
-/* -------- Wordpress Sites Styles -------- */
-#mysites {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.project-list ul {
+    list-style-position: inside;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-#wordpress-links {
-    display: flex;
-    justify-content: space-around;
+.project-list ul li {
+    margin: 10px 0;
 }
 
-.wordpresslink img {
-    width: 100%;
-}
-.wordpresslink img:hover {
-    filter: hue-rotate(90deg)
-}
+/* Responsive */
 
-
-/* -------- Github Pages List Styles -------- */
-#gitpages {
-    display: flex;
-    justify-content: left;
-    background: rgb(120,131,255);
-    background: linear-gradient(37deg, rgba(120,131,255,1) 0%, rgba(88,41,41,1) 100%);
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 90px;
-}
-
-#git-img-frame {
-    text-align: left;
-    margin: auto 10px;
-    width: 40%;
-}
-#git-img-frame img {
-    width: 90%;
-}
-
-#project-list {
-    margin: 5px 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-#project-list h3 {
-    margin: 20px 10px;
-    font-size: 30px;
-}
-
-#project-list ul li {
-    list-style: none;
-    margin-bottom: 8px;
-    padding: 5px;
-}
-#project-list ul li a {
-    font-size: 20px;
-    padding: 5px;
-    text-decoration: underline;
-    background-color: black;
-    color: #3AEE00;
-    margin-bottom: 8px;
-}
-
-#project-list ul li a:hover {
-    color: #CD00EE;
-}
-
-
-
-
-
-/* -------- Math Bar Styles -------- */
-
-#mathbar {
-    background-color: #A1ADC3;
-    margin-bottom: 500px;
-    margin: 20px;
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 12px auto;
-}
-
-#numinputs form {
-    background-color: #ADC3E8;
-    display: flex;
-}
-
-.number-input {
-    display: flex;
-    flex-direction: column;
-    margin: 2px 30px;
-    width: 30%;
-}
-
-.number-input input {
-    width: 80%;
-    font-size: 24px;
-}
-
-#mathinstructions {
-    padding: 20px;
-    background-color: gray;
-}
-#mathinstructions p {
-    font-size: 22px;
-}
-
-#submit-form {
-    width: 30%;
-    margin-top: auto;
-    padding: 0 20px;
-    height: 35px;
-    background-color: #7D92B8;
-}
-
-#output {
-    margin-top: 10px;
-    font-size: 22px;
-}
- #output p {
-     padding-bottom: 5px;
- }
-
-.deadspace {
-    height: 400px;
-    background-color: black;
-    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/potw1936a.jpg");
-    background-size: contain;
-}
-/* -------- Mobile Styles -------- */
-@media screen and (max-width: 863px){
-    #hero {
-        flex-direction: column;
+/* tablet */
+@media only screen and (min-width: 638px){
+    header h1 {
+        text-align: left;
+        margin-left: 90px
     }
-    #intro-box {
-        flex-direction: column;
-        background-image: none;
-        background: rgb(238,236,255);
-        background: linear-gradient(189deg, rgba(238,236,255,1) 0%, rgba(138,155,190,1) 50%, rgba(86,99,215,1) 100%);
+
+    .portrait-frame {
+        text-align: center;
     }
-    #intro-side {
-       display: none;
+    .portrait-frame img {
+        width: 70%;
     }
-    .intro-png {
-       margin: 0 auto;
-    }
-    #intro-top {
-        display: block;
-    }
-    #intro-box .info {
-        width: 100%;
+    .introduction {
+        margin-top: 90px;
         margin-bottom: 20px;
     }
-    #special {
-        margin: 0;
+    .contact {
+        margin-bottom: 80px;
     }
-    .about-row {
-        flex-direction: column;
+}
+
+/* small screen */
+@media only screen and (min-width: 800px) {
+    .portfolio {
+        max-width: 1200px;
+    }
+    header h2 {
+        text-align: center;
+    }
+    .intro-container {
+        flex-direction: row;
         justify-content: center;
+        margin-bottom: 60px;
     }
-    .about-content {
-        width: auto;
-    }
-    .icon-b {
+    .portrait-frame {
+        width: 100%;
         text-align: center;
+        margin: auto 0;
     }
-    #hero {
-        margin-bottom: 20px;
-    }
-    .heroimg {
-        width: 90%;
-        margin: 10px auto;
-        text-align: center;
-    }
-    .heroimg .img {
-        width: 70%;
-    }
-    #atlantisbutton {
-        margin-bottom: 10px;
-    }
-    .link-box {
-        width: 33%;
-    }
-    .link-box img {
-        width: 30%;
-    }
-    .link-box a {
-        font-size: 13px;
-    }
-    #wordpress-links {
-        flex-direction: column;
-        width: 70%;
-    }
-    #gitpages {
-        flex-direction: column;
-    }
-    #git-img-frame {
-        text-align: center;
-    }
-
-    #mathbar {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-    #mathinstructions p {
-        font-size: 17px;
-        margin-bottom: 3px;
-    }
-    #numinputs form {
-        flex-direction: column;
-        text-align: center;
-    }
-    .number-input {
-        width: 20%;
-        text-align: center;
-    }
-    .number-input input {
-       align-items: center;
-       margin: 5px auto;
-    }
-
-    #percentage-form {
-        text-align: center;
-        align-items: center;
-    }
-    #submit-form {
-        width: 25%;
-        padding: 5px 10px;
-    }
+   .portrait-frame img {
+        width: 80%;
+   }
+   .introduction {
+       width: 90%;
+       margin: auto 30px;
+       font-size: 30px;
+   }
+   .introduction h2 {
+       margin-bottom: 20px;
+   }
+  
+   .introduction p {
+       margin-left: 10px;
+       font-size: 70%;
+   }
+   .location {
+    margin-bottom: 30px;
+}
+.contact-me {
+    margin-bottom: 50px;
+}
 }
 
+/* large screen */
+@media only screen and (min-width: 1200px) {
+    .intro-container {
+        margin-bottom: 90px;
+    }
+    .portrait-frame img{
+        width: 80%;
+    }
+    .introduction h2 {
+        margin-bottom: 50px;
+    }
+    .location {
+        margin-bottom: 50px;
+    }
+    .introduction p {
+        font-size: 90%;
+        margin-top: 0;
+    }
+    .contact-me {
+        margin-bottom: 90px;
+    }
+}
