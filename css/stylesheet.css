@@ -97,29 +97,6 @@ main p {
     font-size: 18px;
     margin-left: 20px;
 }
-
-/* about me styles */
-
-.aboutme section {
-    margin: 30px 0;
-}
-
-.aboutme h2 {
-    font-size: 40px;
-    margin-bottom: 35px;
-}
-
-.aboutme h3 {
-    font-size: 32px;
-}
-
-hr{ 
-    height: 1px;
-    color: #ACBEE8;
-    background-color: #ACBEE8;
-    border: none;
-  }
-
 /* contact styles */
 
 .contact-me {
@@ -150,6 +127,33 @@ hr{
 .contact-me a {
     text-align: center;
 }
+
+/* about me styles */
+.aboutme {
+    margin-top: 90px;
+}
+
+.aboutme section {
+    margin: 30px 0;
+}
+
+.aboutme h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.aboutme h3 {
+    font-size: 32px;
+}
+
+hr{ 
+    height: 1px;
+    color: #ACBEE8;
+    background-color: #ACBEE8;
+    border: none;
+  }
+
+
 
 footer {
    background-color: darkgray;
