@@ -17,11 +17,19 @@
 <body>
     <!-- ---- Header ---- -->
     <header>
+        <nav>
+            <ul>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                <li><a href="#projects">Projects</a></li>
+                </li>
+                <li>
+                    <img src="img/rw.ico" alt="rw icon">
+                </li>
+            </ul>
+        </nav>
         <h1>Ryan Whitmore</h1>
-        <div class="mission">
-            <h2>Working to make the Internet a better place.</h2>
-        </div>
-
+        <h2 class="mission">Working to make the Internet a better place.</h2>
     </header>
 
     <div class="portfolio">
@@ -31,7 +39,7 @@
             <!-- --- Introduction --- -->
             <div class="intro-container">
                 <div class="portrait-frame">
-                    <img src="img/whitmoreportrait.jpg" alt="Ryan Whitmore Portrait">
+                    <img class="portrait-frame" src="img/whitmoreportrait.jpg" alt="Ryan Whitmore Portrait">
                 </div>
                 <article class="introduction">
                     <h2>I'm a web developer with a background in geography.</h2>
@@ -46,25 +54,19 @@
             </div>
 
             <!-- --- Contact Me --- -->
-            <article class="contact-me">
+            <article id="contact" class="contact-me">
                 <h3>Contact Me</h3>
                 <!-- icon bar -->
                 <nav class="icon-bar">
-                    <div class="icon-frame">
-                        <a href="https://www.linkedin.com/in/whitmorespaceindustries/" target="_blank">
-                            <img src="img/linkedin-lg-3.png" alt="linkedin">
-                        </a>
-                    </div>
-                    <div class="icon-frame">
-                        <a href="https://github.com/warptrail" target="_blank">
-                            <img src="img/github-lg-3.png" alt="github">
-                        </a>
-                    </div>
-                    <div class="icon-frame">
-                        <a href="mailto:ryan@whitmorespace.com">
-                            <img src="img/email-lg-3.png" alt="email">
-                        </a>
-                    </div>
+                    <a class="icon-frame" href="https://www.linkedin.com/in/whitmorespaceindustries/" target="_blank">
+                        <img src="img/linkedin-lg-3.png" alt="linkedin">
+                    </a>
+                    <a class="icon-frame" href="https://github.com/warptrail" target="_blank">
+                        <img src="img/github-lg-3.png" alt="github">
+                    </a>
+                    <a class="icon-frame" href="mailto:ryan@whitmorespace.com">
+                        <img src="img/email-lg-3.png" alt="email">
+                    </a>
                 </nav>
                 <!-- email link -->
                 <div class="linkbox">
@@ -73,7 +75,7 @@
             </article>
 
             <!-- --- About Me --- -->
-            <article class="aboutme">
+            <article id="about" class="aboutme">
                 <h2>About Me</h2>
                 <!-- section 1 -->
                 <section class="why">
@@ -110,16 +112,16 @@
             </article>
 
             <!-- --- Project List --- -->
-            <article class="project-list">
+            <article id="projects" class="project-list">
                 <h2>List of Projects</h2>
-                <ul>
+                <ol>
                     <li><a href="https://warptrail.github.io/WP-Install-Request-Form/" target="_blank">Western Paper
                             Install Request
                             Form</a></li>
                     <li><a href="https://whitmorespace.com" target="_blank">Whitmorespace.com</a></li>
                     <li><a href="https://warptrail.github.io/nitro-space/" target="_blank">My Javascript Playground</a>
                     </li>
-                </ul>
+                </ol>
             </article>
         </main>
 
