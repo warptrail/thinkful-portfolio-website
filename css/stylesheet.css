@@ -130,6 +130,7 @@ main p {
 
 .contact-me {
     margin: 60px 0;
+    height: 32vh;
 }
 .contact-me h3 {
     text-align: center;
@@ -182,8 +183,6 @@ hr{
     border: none;
   }
 
-
-
 footer {
    background-color: darkgray;
    padding: 10px;
@@ -191,7 +190,6 @@ footer {
 
 /* project list styles */
 .project-list {
-    height: 83vh;
     margin: 60px 0;
    
 }
